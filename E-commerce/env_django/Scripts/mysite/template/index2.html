@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+</head>
+
+<body>
+    <h1>Text Analyzer</h1>
+    <form action="\analyze" method="POST">{% csrf_token %}
+    <div>
+        Enter your text here: <textarea name="text" rows=&quot;7&quot; style="margin: 0px; width: 1380px; height: 203px;"></textarea>
+    </div>
+    <div>
+        Lower_Case:<input type="checkbox" name="lower_case">
+    </div>
+    <div>
+        Remove Puctuations:<input type="checkbox" name="remove_punc">
+    </div>
+    <div>
+   
+        <button type="submit" class="btn btn-primary">Analyze Text</button>
+    </div>
+</form>
+</body>
+
+</html>
